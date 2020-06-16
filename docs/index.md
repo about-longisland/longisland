@@ -1,0 +1,2 @@
+# Long Island
+![A map of Long Island](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/1842_Mather_Map_of_Long_Island%2C_New_York_-_Geographicus_-_LongIsland-mather-1842.jpg/1280px-1842_Mather_Map_of_Long_Island%2C_New_York_-_Geographicus_-_LongIsland-mather-1842.jpg)
