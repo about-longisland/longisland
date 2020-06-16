@@ -39,3 +39,5 @@ vignettes/*.pdf
 .Renviron
 NYS_Civil_Boundaries_SHP
 .DS_Store
+docs/longbeach.md
+untitled.md

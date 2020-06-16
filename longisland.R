@@ -1,6 +1,8 @@
 library(sf)
 library(sqldf)
 library(ggplot2)
+library(Hmisc)
+library(htmltools)
 
 shore <- read_sf("NYS_Civil_Boundaries_SHP/State_Shoreline.shp")
 
@@ -33,16 +35,22 @@ for(i in li){
 
 num = 1
 for (i in 1:nrow(li)){
-  townplot <- ggplot() + geom_sf(data=lishore[i,], aes(fill=NAME))
-  ggsave(sprintf("%s.svg",lishore$NAME[i]),townplot)
+  townplot <- ggplot() + geom_sf(data=lishore[i,], fill="steelblue1")
+  svgname <- sprintf("%s.svg",sub(" ", "-", lishore$NAME[i]))
+  mdname <- sprintf("docs/%s.md",sub(" ", "-", lishore$NAME[i]))
+  ggsave(sprintf('docs/%s',svgname),townplot)
+  mdfile <- sprintf("# %s of %s\n## Population in 2010: %s\n![A map of %s](%s)",capitalize(lishore$MUNI_TYPE[i]),lishore$NAME[i],format(lishore$POP2010[i], big.mark = ","),lishore$NAME[i],svgname)
+  write(mdfile,mdname)
 }
 
 num = 1
 for (i in 1:nrow(li)){
-  print(sprintf("%s.svg",lishore$NAME[i]))
+  print(sprintf("%s.md",lishore$NAME[i]))
 }
 
 
 write("#text!\n##more text", "docs/text.md")
-sprintf(lishore$NAME[1],format(lishore$POP2010, big.mark = ","))
+sprintf("# %s of %s\n## Population in 2010: %s\n![A map of %s](%s.svg)",capitalize(lishore$MUNI_TYPE[i]) ,lishore$NAME[1],format(lishore$POP2010[1], big.mark = ","),lishore$NAME[1],lishore$NAME[1])
 nrow(li)
+
+ggplot() + geom_sf(data=lishore[1,], fill="steelblue1")

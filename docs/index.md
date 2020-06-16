@@ -5,9 +5,9 @@
 
 [Brookhaven](Brookhaven.md)
 
-[East Hampton](East%20Hampton.md)
+[East Hampton](East-Hampton.md)
 
-[Glen Cove](Glen%20Cove.md)
+[Glen Cove](Glen-Cove.md)
 
 [Hempstead](Hempstead.md)
 
@@ -15,15 +15,15 @@
 
 [Islip](Islip.md)
 
-[Long Beach](Long%20Beach.md)
+[Long Beach](Long-Beach.md)
 
-[North Hempstead](North%20Hempstead.md)
+[North Hempstead](North-Hempstead.md)
 
-[Oyster Bay](Oyster%20Bay.md)
+[Oyster Bay](Oyster-Bay.md)
 
 [Riverhead](Riverhead.md)
 
-[Shelter Island](Shelter%20Island.md)
+[Shelter Island](Shelter-Island.md)
 
 [Smithtown](Smithtown.md)
 
